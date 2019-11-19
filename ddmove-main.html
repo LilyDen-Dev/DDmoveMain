@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Ddmove</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="css/app.css" media="screen" />
+		<!--<link rel="stylesheet" type="text/css" href="css/index.css" media="screen" />-->
+		<script type="text/javascript" src="js/jQuery-3.3.1.js"></script>
+		<!--<script type="text/javascript" src="js/app.js"></script>-->
+		<script type="text/javascript" src="js/scripts.js"></script>
+	</head>
+	<body class="main">
+		<header class="white-text">
+			<div class="header-img">
+				<img src="img/backgrounds/img1.png" alt="">
+				<div class="background-gradient"></div>
+			</div>
+			<div class="header-top flex">
+				<a href="/" class="ddcargo-logo"></a>
+				<nav>
+					<a class="search-deliveries" href="!#">Search deliveries</a>
+					<a class="how-it-works" href="!#">How it works</a>
+					<a href="!#">Help</a>
+					<a class="sign-in" href="/sign-in">Log in</a>
+				</nav>
+				<div class="phone-number">
+					020 3137 2454
+					M-F: 9am-6pm
+				</div>
+				<a href="/sign-up" class="button empty">Transport company sign up</a>
+				<a href="/add" class="button blue">Get quotes</a>
+				<div class="change-language">
+					<div class="up">
+						<span>En</span>
+						<img src="/img/arrows/arrow-down-white.png" alt="">
+					</div>
+					<div class="down">
+						<a href="">Rus</a>
+						<a href="">Thai</a>
+					</div>
+				</div>
+				<div class="hidden-menu">
+					<div class="menu-popup-wrap">
+						<div class="menu-popup">
+							<div class="close"></div>
+							<a href="" class="ddcargo-logo"></a>
+							<div class="for-registered-users" style="display: none">
+								<div class="button empty with-icon"><img src="/img/icons/car-icon-white.png">My Ddmove</div>
+								<div class="navigation">
+									<a href=""><img src="/img/icons/icon-van-color.png" alt="">Current quotes</a>
+									<a href=""><img src="/img/icons/icon-auction-color.png" alt="">Outbid auctions</a>
+									<a href=""><img src="/img/icons/icon-success-color.png" alt="">Accepted quotes</a>
+									<a href=""><img src="/img/icons/delete-color.png" alt="">Unsuccessful quotes</a>
+									<a href=""><img src="/img/icons/icon-hand-shake-color.png" alt="">Completed quotes</a>
+									<a href=""><img src="/img/icons/icon-view.png" alt="">Deliveries I’m watching</a>
+									<a href=""><img src="/img/icons/icon-search-color.png" alt="">Saved searches</a>
+									<a href=""><img src="/img/icons/icon-networking.png" alt="">Feedback</a>
+									<a href=""><img src="/img/icons/icon-upgrade-color.png" alt="">Logout</a>
+									<div class="navigation-more">
+										<a href="">Search deliveries</a>
+										<a href="">How it works</a>
+										<a href="">Help</a>
+									</div>
+								</div>
+							</div>
+							<div class="for-unregistered-users">
+								<nav>
+									<a href="">Search deliveries</a>
+									<a href="">How it works</a>
+									<a href="">Help</a>
+									<a href="">Log in</a>
+								</nav>
+								<div class="phone-number">
+									020 3137 2454
+									M-F: 9am-6pm
+								</div>
+								<div class="button empty">Transport company sign up</div>
+								<div class="button blue">Get quotes</div>
+							</div>
+							<div class="language"><b>Th</b><b class="active">En</b></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="content">
+				<div class="text">
+					<p class="white">Save time & money - up to 75% off standard rates</p>
+					<h1><p class="white big-text">DELIVERY FIRMS</p>COMPETE FOR&nbsp;YOUR&nbsp;JOB</h1>
+				</div>
+				<div class="get-price">
+					<span class="black">We save you money moving anything, anywhere</span>
+					<div class="form js-form">
+						<b class="headline">The UK’s favourite delivery, removals and transport marketplace</b>
+						<div class="part-of-form">
+							<div class="error-wrap">
+								<div class="select js-dropbox">
+									<img src="/img/arrows/arrow-down-color.png" alt="">
+									<input name="type" class="js-value js-required" type="hidden" autocomplete="off">
+									<input class="js-value-name" type="text" placeholder="What are you moving?" autocomplete="off" readonly>
+									<div class="choice-another js-select-dropbox">
+										<div class="choice">What are you moving?</div>
+										<div class="choice">What are you moving?</div>
+									</div>
+								</div>
+								<div class="error-message"><p>incorrect value</p></div>
+							</div>
+							<div class="for-input">
+								<div class="input-error-wrap">
+									<div class="input js-input js-from">
+										<input type="hidden" class="district" name="from_district">
+										<input type="hidden" class="amphoe" name="from_amphoe">
+										<input type="hidden" class="province" name="from_province">
+										<input type="hidden" class="zipcode" name="from_zipcode">
+										
+										<input name="from_full" class="js-address" type="text" placeholder="Pick up location">
+										<div class="outline"></div>
+										<img src="/img/icons/flag-right.png" alt="">
+									</div>
+									<div class="error-message"><p>Incorrect value</p></div>
+								</div>
+								<div class="input-error-wrap">
+									<div class="input js-input js-to">
+										<input type="hidden" class="district" name="to_district">
+										<input type="hidden" class="amphoe" name="to_amphoe">
+										<input type="hidden" class="province" name="to_province">
+										<input type="hidden" class="zipcode" name="to_zipcode">
+										
+										<input name="to_full" class="js-address" type="text" placeholder="Drop off location">
+										<div class="outline"></div>
+										<img src="/img/icons/flag-left.png" alt="">
+									</div>
+									<div class="error-message"><p>Incorrect value</p></div>
+								</div>
+								
+							</div>
+							<div class="for-button">
+								<div class="button gradient" onclick="Start(this)">Get instant prices</div>
+								<a href="/sign-in">Already received a quote?</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<div class="button gradient absolute">Feedback</div>
+		<section class="for-body">
+			<h2 class="big-text">Millions of people use Ddmove</h2>
+			<div class="advantages flex">
+				<div>
+					<img src="/img/main/consent.png" alt="">
+					<h3>Fast and easy</h3>
+					<p>Complete one simple form and quotes come to you via email. Hassle-free, no phone calls required.</p>
+				</div>
+				<div>
+					<img src="/img/main/shield.png" alt="">
+					<h3>Trustworthy</h3>
+					<p>All delivery companies on Ddmove are feedback rated for your peace of mind.</p>
+				</div>
+				<div>
+					<img src="/img/main/price-tag.png" alt="">
+					<h3>Great prices</h3>
+					<p>As Ddmove's delivery companies are already making similar trips, quotes are up to 75% cheaper than standard rates.</p>
+				</div>
+				<div>
+					<img src="/img/main/lifebuoy.png" alt="">
+					<h3>Helpful</h3>
+					<p>Need assistance? Email or call us. We are here to help.</p>
+				</div>
+			</div>
+		</section>
+		<div class="how-works flex">
+			<div class="for-video"></div>
+			<div class="for-text">
+				<h2 class="white big-text">How Ddmove works</h2>
+				<div class="icons">
+					<div class="circle"><img src="/img/main/website.png"></div>
+					<p class="white">Request quotes from our 102,334 rated transport providers.</p>
+				</div>
+				<div class="icons">
+					<div class="circle"><img src="/img/main/compare.png"></div>
+					<p class="white">Compare prices and read previous customer feedback to pick the right delivery quote for you.</p>
+				</div>
+				<div class="icons">
+					<div class="circle"><img src="/img/main/truck.png"></div>
+					<p class="white">Sit back and relax while your item is safely delivered by your chosen transport provider.</p>
+				</div>
+			</div>
+		</div>
+		<div class="resent-deliveries flex">
+			<section class="for-body">
+				<h2 class="big-text">Recent deliveries</h2>
+				<div class="slider-wrap js-carousel" data-shift="0" data-count="3" data-min="" data-max="">
+					<div class="slider flex js-carousel-slide">
+						<div class="announcement">
+							<div class="description-photo">
+								<img src="/img/photo/furnityre.png" alt="">
+							</div>
+							<div class="price">£60</div>
+							<div class="description">
+								<h3>ANTIQUE CABINET</h3>
+								<div class="distance">
+									<div class="place-start"><span>Bristol,</span><span>BS15 3JE</span></div>
+									<div class="place-finish"><span>North Hykeham,</span><span>LN6 3QY</span></div>
+								</div>
+							</div>
+						</div>
+						<div class="announcement">
+							<img src="img/photo/car.png" alt="">
+							<div class="price">£290</div>
+							<div class="description">
+								<h3>RENAULT CAPTUR</h3>
+								<div class="distance">
+									<div class="place-start"><span>Edinburgh, Edinburgh,</span><span>EH11</span></div>
+									<div class="place-finish"><span>Swindon Village, Gloucestershire,</span><span>GL51</span></div>
+								</div>
+							</div>
+						</div>
+						<div class="announcement">
+							<img src="img/photo/motorcycle.png" alt="">
+							<div class="price">£500</div>
+							<div class="description">
+								<h3>HONDA CB125</h3>
+								<div class="distance">
+									<div class="place-start"><span>London, Greater London,</span><span>EC2A</span></div>
+									<div class="place-finish"><span>Barcelona, 8040,</span><span>Spain</span></div>
+								</div>
+							</div>
+						</div>
+						<div class="announcement">
+							<img src="img/photo/furnityre.png" alt="">
+							<div class="price">£60</div>
+							<div class="description">
+								<h3>ANTIQUE CABINET</h3>
+								<div class="distance">
+									<div class="place-start"><span>Bristol,</span><span>BS15 3JE</span></div>
+									<div class="place-finish"><span>North Hykeham,</span><span>LN6 3QY</span></div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="pages-numbers for-main">
+						<div class="js-carousel-left"><img class="rotate" src="img/arrows/arrow-right-color.png" alt=""></div>
+						<div class="js-carousel-right"><img src="img/arrows/arrow-right-color.png" alt=""></div>
+					</div>
+				</div>
+			</section>
+		</div>
+		<div class="testimonials flex">
+			<section class="for-body">
+				<h2 class="big-text white">Resent testimonials</h2>
+				<div class="slider-wrap">
+					<div class="slider flex">
+						<div class="comment">
+							<img src="img/photo/testimonial-author-1.png" alt="">
+							<p>Simple and effective, will be using regularly. Good value and makes the process of moving big things around so much easier!</p>
+							<b>Mark W.</b>
+						</div>
+						<div class="comment">
+							<img src="img/photo/testimonial-author-4-(1).png" alt="">
+							<p>All went very smoothly and easily and the courier whose bid I accepted were lovely, good communication, and helpful. Couldn't fault at all and would certainly use again.</p>
+							<b>Charlotte H.</b>
+						</div>
+						<div class="comment">
+							<img src="img/photo/testimonial-author-3.png" alt="">
+							<p>Ddmove fills the gaps between getting bulky items collected and delivered and you having to go get them yourself. Used them many times, saves me lots of time and money.</p>
+							<b>John G.</b>
+						</div>
+						<div class="comment">
+							<img src="img/photo/testimonial-author-1.png" alt="">
+							<p>Simple and effective, will be using regularly. Good value and makes the process of moving big things around so much easier!</p>
+							<b>Mark W.</b>
+						</div>
+					</div>
+				</div>
+				<div class="pages-numbers for-main">
+					<div><img class="rotate" src="/img/arrows/arrow-right-white.png" alt=""></div>
+					<div><img src="img/arrows/arrow-right-white.png" alt=""></div>
+				</div>
+			</section>
+		</div>
+		<section class="for-body">
+			<h2 class="big-text">Our partners</h2>
+			<div class="partners flex">
+				<img src="img/main/trastpilot.png" alt="">
+				<img src="img/main/ebay.png" alt="">
+				<img src="img/main/reviews.png" alt="">
+			</div>
+		</section>
+		<div class="service flex">
+			<section class="for-body">
+				<h2 class="big-text">Our services</h2>
+				<div class="categories">
+					<div class="category-box">
+						<div class="image">
+							<img src="img/categories/3.png" alt="">
+						</div>
+						<h2>Furniture delivery</h2>
+					</div>
+					<div class="category-box">
+						<div class="image">
+							<img src="img/categories/5.png" alt="">
+						</div>
+						<h2>Motorbike transport</h2>
+					</div>
+					<div class="category-box">
+						<div class="image">
+							<img src="img/categories/1.png" alt="">
+						</div>
+						<h2>Car transport</h2>
+					</div>
+					<div class="category-box">
+						<div class="image">
+							<img src="img/categories/2.png" alt="">
+						</div>
+						<h2>Haulage</h2>
+					</div>
+					<div class="category-box">
+						<div class="image">
+							<img src="img/categories/14.png" alt="">
+						</div>
+						<h2>Fragile item transport</h2>
+					</div>
+					<div class="category-box">
+						<div class="image">
+							<img src="img/categories/12.png" alt="">
+						</div>
+						<h2>Boat transport</h2>
+					</div>
+					<div class="category-box">
+						<div class="image">
+							<img src="img/categories/4.png" alt="">
+						</div>
+						<h2>Removals</h2>
+					</div>
+					<div class="category-box">
+						<div class="image">
+							<img src="img/categories/6.png" alt="">
+						</div>
+						<h2>Other</h2>
+					</div>
+				</div>
+			</section>
+		</div>
+		<div class="big-question background-img">
+			<p>Are you a transport company?</p>
+			<a href="/sign-up" class="button gradient">Transport company sign up</a>
+		</div>
+		<footer>
+			<section>
+				<div class="logo">
+					<a href="" class="ddcargo-logo"></a>
+					<small>©2018 Ddmove. All rights reserved.</small>
+				</div>
+				<div class="menus-content">
+					<b>Services</b>
+					<nav class="services">
+						<a href="">Haulage</a>
+						<a href="">Courier services</a>
+						<a href="">Removals</a>
+						<a href="">Man and van</a>
+						<a href="">Large item delivery</a>
+						<a href="">Pet transport</a>
+						<a href="">International shipping</a>
+						<a href="">European transport</a>
+					</nav>
+					<nav class="menu">
+						<a href="">About </a>
+						<a href="">Blog</a>
+						<a href="">Contact</a>
+						<a href="">Cookie Policy</a>
+						<a href="">Privacy</a>
+						<a href="">Terms</a>
+						<a href="">Sitemap</a>
+					</nav>
+				</div>
+				<div class="socials">
+					<a href="" class="facebook"></a>
+					<a href="" class="twitter"></a>
+					<a href="" class="ebay"></a>
+				</div>
+			</section>
+		</footer>
+	</body>
+</html>
